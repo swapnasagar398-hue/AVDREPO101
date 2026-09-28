@@ -10,5 +10,5 @@ jobs:
         - name : checkout code
           uses: actions/checkout@v2
         - name: print hello program
-          run: python demo.py
+          run: echo "hello world"
 
