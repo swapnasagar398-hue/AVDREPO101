@@ -1,8 +1,6 @@
 import pandas as pd
-data={
-    "name":["A","B"],
-    "age" :[24,45]
-}
+data=pd.read_csv("F:/user_data1.csv")
+print(data)
+    
 
-df=pd.DataFrame(data)
-print(df)
+
