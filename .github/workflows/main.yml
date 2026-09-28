@@ -1,10 +1,10 @@
-name: External-dependencies
+name: execute testcases
 on :
   push:
     branches:
     - main
 jobs:
-  external_workflow:
+  Build_test_cases:
     runs-on : ubuntu-latest
     steps:
       - name: checkout code
@@ -12,9 +12,16 @@ jobs:
 
       - name: install python required library
         run: pip install -r requirements.txt
+      
+      - name: run test case
+        run : pytest --cov=calc --cov-report-term
 
-      - name: execute test.py
-        run: python test.py
+      
+  deploy:
+    runs-on : ubuntu-latest
+    steps:
+      - name: print message
+        run: echo "sucessfully deployed"
 
 
 
