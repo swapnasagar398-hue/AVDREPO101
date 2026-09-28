@@ -1,2 +1,3 @@
 import os
-username=os.getenv("DB_CREDENTIALS")
+username=os.getenv("DB_USERNAME")
+password=os.getenv("DB_PASSWORD")

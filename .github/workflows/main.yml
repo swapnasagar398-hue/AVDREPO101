@@ -12,7 +12,8 @@ jobs:
 
       - name: get secret value
         env:
-          DB_CREDENTIALS: ${{secrets.DB_CREDENTIALS}}
+          username: ${{secrets.DB_USERNAME}}
+          password: ${{secrets.DB_PASSWORD}}
         run: python secure.py
 
 
