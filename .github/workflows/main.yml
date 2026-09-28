@@ -1,4 +1,4 @@
-name: jobs workflow
+name: python version workflow
 on :
     push:
         branches:
@@ -11,4 +11,11 @@ jobs:
           run: python --version
         - name: print python version
           run:  echo "show latest version"
+        - name: setup python version 3.10
+          uses: actions/setup-python@v3
+          with:
+            python --version : '3.10'
+        - name: show python version
+          run: python --version
+          
     
