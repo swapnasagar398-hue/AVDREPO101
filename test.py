@@ -1,5 +1,10 @@
 import pandas as pd
-df=pd.read_csv("F:/user_data1.csv")
+data={
+    "name":["manish","ram"],
+    "age":[27,56],
+    "address":["pune","hyderabad"]
+}
+df=pd.DataFrame(data)
 print(df)
     
 
