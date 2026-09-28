@@ -11,7 +11,7 @@ jobs:
         uses: actions/checkout@v3
 
       - name: install python required library
-        run: pip instal pandas
+        run: pip install pandas
 
       - name: execute test.py
         run: python test.py
