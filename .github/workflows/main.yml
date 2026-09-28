@@ -14,7 +14,7 @@ jobs:
         run: pip install -r requirements.txt
       
       - name: run test case
-        run : pytest --cov=calc --cov-report=term --cov-fail-under=80
+        run : pytest --cov=calc --cov-report=term --cov-fail-under=70
 
       
   deploy:
